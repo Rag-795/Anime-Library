@@ -217,7 +217,6 @@ function addToList(id) {
   
   if(!alreadyExist){
     watchList.push(id);
-    console.log(watchList);
     localStorage.setItem("watchList",JSON.stringify(watchList));
     alert("Added Successfully");
   }
