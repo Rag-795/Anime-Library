@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Necessary CSS files -->
+    <link rel="stylesheet" href="styles/login.css">
+    <!-- Fav icon -->
+    <link rel="icon" href="resources/fav-icon.jpeg" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Login section -->
+    <section>
+        <div class="login">
+            <div class="content">
+                <h2>Login</h2>
+
+                <form>
+                    <input class="inputBox" type="email" placeholder="Email" id="emailInput" required>
+                    <input class="inputBox" type="password" placeholder="Password" id="pwdInput" required>
+
+                    <div class="links">
+                        <a href="forgotPassword.html">Forgot Password</a>
+                        <a href="signUp.html">SignUp</a>
+                    </div>
+
+                    <input class="inputBox" type="button" value="Login" onclick="login()">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="resources/bg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Necessary JavaScript Files -->
+    <script src="scripts/signup.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

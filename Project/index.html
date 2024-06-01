@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Library</title>
+    <!-- Necessary CSS files -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="resources/fav-icon.jpeg" type="image/x-icon">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar container">
+            <a href="index.html" class="logo">
+                ANIME<span>LIBRARY</span>
+            </a>
+
+            <div class="searchBox">
+                <input type="text" id="search-in" placeholder="Search Anime">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="user-container">
+
+                <a href="#" class="user">
+                    <img src="resources/User-icon.png" alt="user-img">
+                    <p id="userGreeting">Welcome <span id="user" style="color: white;">User!</span></p>
+                </a>
+
+                <div class="dropdown">
+                        <button class="buttons" id="loginBtn">Login</button>
+                        <button class="buttons" id="logoutBtn">Logout</button>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar">
+
+                <a href="#home" class="nav-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="nav-title">Home</span>
+                </a>
+                <a href="#popular" class="nav-link">
+                    <i class="fa-brands fa-gripfire"></i>
+                    <span class="nav-title">Popular</span>
+                </a>
+                <a href="#movies" class="nav-link">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span class="nav-title">Movies</span>
+                </a>
+                <a href="watch-list.html" class="nav-link">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="nav-title">Watch-List</span>
+                </a>
+                <a href="#contact-us" class="nav-link">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="nav-title">Contact-Us</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home container" id="home">
+
+
+        <div class="home-content swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="resources/Big-3/One piece.jpg" alt="">
+                        <div class="box-text">
+                            <h2 class="anime-title">One Piece</h2>
+                            <p>Monkey D. Luffy sets sail as a pirate with the goal of finding the legendary treasure
+                                known as the One Piece.
+                                Along the way, he assembles a diverse crew, each with unique abilities and dreams.
+                                The series combines adventure, humor, and intricate world-building.
+                                It explores themes of freedom, friendship, and the pursuit of dreams.</p>
+                            <a href="https://hianime.to/watch/one-piece-100?ep=2142" target="_blank" class="watch-btn">
+                                Watch Now        
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="resources/Big-3/Naruto_.jpg" alt="" class="naruto-img">
+                        <div class="box-text">
+                            <h2 class="anime-title">Naruto</h2>
+                            <p>
+                                Naruto Uzumaki, a young ninja with dreams of becoming the Hokage (leader) of his
+                                village,
+                                faces challenges, rivalries, and personal growth. The series explores themes of
+                                friendship,
+                                perseverance, and destiny as Naruto navigates the ninja world.
+                            </p>
+                            <a href="https://hianime.to/watch/naruto-shippuden-355?ep=7882" target="_blank" class="watch-btn">
+                                Watch Now
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="resources/Big-3/bleach.jpg" alt="">
+                        <div class="box-text">
+                            <h2 class="anime-title">Bleach</h2>
+                            <p>
+                                Ichigo Kurosaki, a teenager who can see ghosts, becomes a Soul Reaper after an encounter
+                                with Rukia Kuchiki.
+                                As a Soul Reaper, he defends humans from evil spirits and guides departed souls to the
+                                afterlife.
+                                His journey involves battles, mysteries, and uncovering dark secrets
+                            </p>
+                            <a href="https://hianime.to/watch/bleach-806?ep=13793" target="_blank" class="watch-btn">
+                                Watch Now
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular -->
+    <section class="popular container" id="popular">
+
+        <div class="heading">
+            <h2 class="heading-title">Popular Anime</h2>
+        </div>
+
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper popular-html">
+                <!-- Contents generated from anime.js -->
+            </div>
+        </div>
+
+        <div class="popular-content-2 swiper">
+            <div class="swiper-wrapper popular-2-html">
+                <!-- Contents generated from anime.js -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Movies -->
+    <section class="movies container" id="movies">
+        <div class="heading">
+            <h2 class="heading-title">Anime Movies</h2>
+        </div>
+
+        <div class="movies-content">
+            <!-- Content Generated from anime.js -->
+        </div>
+
+    </section>
+
+    <footer class="contact-us container" id="contact-us">
+        <h3 class="copyright">&copy; By <span>Raghav</span> & <span>Hari</span></h3>
+        <div class="links">
+
+            <div class="left">
+                <span class="name">Raghav N</span>
+                <a href="https://wa.me/917708205488?text=Great Work Raghav!Would you like to collaborate with us?" class="social-media" id="whatsapp" target="_blank">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <span>Whatsapp</span>
+                </a>
+                <a href="https://www.instagram.com/raghav.795/" class="social-media" id="instagram" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/raghav--n/" class="social-media" id="linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Rag-795" class="social-media" id="github" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div class="right">
+                <span class="name">Hari Heman V K</span>
+                <a href="https://wa.me/919361424714?text=Great Work Hari Heman!Would you like to collaborate with us?" class="social-media" id="whatsapp" target="_blank">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <span>Whatsapp</span>
+                </a>
+                <a href="https://www.instagram.com/mad__man__heman/" class="social-media" id="instagram" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/hari-heman/" class="social-media" id="linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/MAD-MAN-HEMAN" class="social-media" id="github" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="scripts/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/anime.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

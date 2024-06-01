@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    
+    <!-- Necessary CSS files -->
+    <link rel="stylesheet" href="styles/login.css">
+    <!-- Fav icon -->
+    <link rel="icon" href="resources/fav-icon.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Login section -->
+    <section>
+        <div class="login">
+            <div class="content">
+                <h2>Sign up</h2>
+
+                <form>
+                    <input class="inputBox" type="text" placeholder="Name" id="nameInput" required>
+                    <input class="inputBox" type="email" placeholder="Email Address" id="emailInput" required>
+                    <input class="inputBox" type="password" placeholder="Password" id="pwdInput" required>
+
+                    <input class="inputBox" type="button" value="Sign up" onclick="register()">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="resources/bg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Necessary JavaScript Files -->
+    <script src="scripts/signup.js"></script>
+</body>
+
+</html>
